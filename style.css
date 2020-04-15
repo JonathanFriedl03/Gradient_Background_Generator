@@ -13,7 +13,9 @@ input{
 }
 input:hover{
     cursor: pointer;
-   
+    border: .1em solid black;
+    border-radius: .12em;
+    transform: scale(1.0);
     transition: all .5s;
    background-color: azure;
 }
@@ -35,9 +37,11 @@ h1 {
 }
 button {
     background: linear-gradient(to right, #ff0000, #00ff00 );
+    display: inline-block;
     text-align: center;
     white-space: nowrap;    
-    border: none;
+    border: .1em solid black;
+    border-radius: .12em;
     height: 2em;
     width: 12em;
     text-transform: uppercase;
