@@ -3,9 +3,7 @@ var color1 = document.querySelector(".color1");
 var color2 = document.querySelector(".color2");
 var body = document.getElementById("gradient");
 let random = document.getElementById('random');
-/* let colors = [];
-colors = randomColor();
-console.log(colors); */
+
 setGradient();
 function setGradient() {
 	body.style.background = 
@@ -43,8 +41,12 @@ function generateRandomColors() {
   }
   function randomColor() {
 	//pick a red from 0 - 255 same for greeen and blue
-	let red = Math.floor(Math.random() * 256);
-	let green = Math.floor(Math.random() * 256);
-	let blue = Math.floor(Math.random() * 256);	
+	let red = getRGBNums();
+	let green = getRGBNums();
+	let blue = getRGBNums();	
 	return "rgb(" + red + ", " + green + ", " + blue + ")";
   }
+  function getRGBNums(){
+	let rgbNum = Math.floor(Math.random() * 256);
+return rgbNum;  
+}
